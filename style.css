@@ -1,0 +1,198 @@
+body,html {width : 100% ; height : 100% ; margin : 0 ; padding : 0 ; background-color : #333 ; color : #444;font-family : arial;
+}
+
+#main {position : relative ; width : 1000px ; margin : 0 auto ; background-color : #EEF ;padding-bottom:0;z-index:8;height : 100%;}
+
+/* CORPS */
+
+#corps  {position : relative ; width : auto ; background-color : #EEF ; margin : 0 auto;
+ height : auto;
+ 
+ }
+ 
+ h2 {font-family : Courier New;margin-bottom : 10px;margin-left : 10px;margin-top : 10px; }
+ 
+ /* Nav */
+ 
+ nav {position : static;background-color : #DDD ; width : 1000px ;
+ }
+ 
+ nav li {
+	display : inline-block ; list-style : none;padding:0;margin:0;}
+ nav ul {
+	padding:0;margin:0;}
+ nav a {
+	text-decoration : none;display : block;padding:20px;}
+ nav a:hover{
+	background-color:#FFF;color : #050;}
+	
+ .navLeft {float : left ;}
+ .navRight {float : right ;}
+ 
+ nav hr {clear : both ; padding : 0 ; margin : 0 ; visibility : hidden ; width : 0px ;border : 0 ;}
+ 
+ /* DIV INTRO */
+ 
+ #introSelect {overflow : hidden;display : block ; text-align : center ;}
+ #intro {margin : 0 auto; padding : 50px ;overflow : hidden ;width : auto ;
+ 
+	padding-top : 150px;
+	padding-bottom : 150px;
+	
+	background-image: url("Images/intro.jpg") ;
+	background-position: x y, x y;
+	background-repeat: no-repeat;
+	background-size: cover
+ }
+  #intro h1 {color : #FFF;padding : 0 auto; margin : 0 auto ;}
+  #name {font-size : 2.5em ;padding-bottom : 15px;font-weight : bold;font-family : Courier New ;}
+  #work {font-size : 2em ;padding-bottom : 15px; font-style: italic;font-family : Courier New ;}
+  #intro img {background-color : #FFF;padding : 3px;margin-top : 15px;}
+ 
+ 
+ /* DIV PROFIL */
+ 
+ #profilSelect {height : 0px; ;overflow : hidden ;width : 100% ;margin : 0 ; padding : 0px ;}
+ #profil {height : auto ; margin : 0 ; padding : 40px ;overflow : hidden; width : auto ;padding-left:140px;padding-right:140px;}
+ 
+ #profil p {margin : 0; ; padding : 0 ;font-size : 1em;font-style : italic ;}
+ #profil h4 {padding-bottom : 0; font-style: italic;font-family : Courier New ;}
+ #name2 {font-size : 1.75em;margin-bottom : 1px;}
+ #work2{font-size : 1.25em;margin-bottom : 30px;margin-top:0;} 
+ #profil img {padding : 5px; background-color : #444; margin-top : 20px; margin-left : 0; margin-bottom : 40px;}
+ 
+ #profil ul {float : right ;list-style-type: none;padding:0;}
+ 
+ 
+/* DIV COMPETENCES */
+ 
+ #competencesSelect {height : 0px ;overflow : hidden ;width : auto ;margin : 0 auto; padding : 0  ;display : block ;}
+ #competences {height : auto ;overflow : hidden ;width : auto;display : block ;padding : 20px;}
+ 
+ #competences h2 {font-family : Courier New;margin-bottom : 10px;margin-left : 10px;margin-top : 10px; }
+ #competences ul {margin-bottom : 40px;}
+ #imgProjets {margin : 0;}
+ 
+ #imgProjets li {display : inline-block ;list-style : none;padding : 15px;padding-top:10px;padding-bottom:10px;}
+ #imgProjets h3 {font-style : italic ;}
+ 
+ 
+ .progress{
+	background:#DDD;
+	width:90%;
+	height:7px;
+	margin:0;
+	padding:0;
+}
+.progress div
+{
+	background:#0F0;
+	height:7px;
+}
+#comp1{width:85%;}
+#comp2{width:80%;}
+#comp3{width:85%;}
+#comp4{width:80%;}
+#comp5{width:70%;}
+#comp6{width:60%;}
+#comp7{width:70%;}
+#comp8{width:60%;}
+#comp9{width:50%;}
+#comp10{width:55%;}
+#comp11{width:70%;}
+ 
+/* DIV MONCV */
+
+ #moncvSelect {height : 0px ;overflow : hidden ;}
+ #moncv {height : auto;overflow : hidden ;width : auto ; display : block; text-align : center; margin : 0 ;padding: 20px;}
+ 
+ #moncv img {background-color : #FFF ;}
+ 
+/* DIV CONTACT */
+ #contactSelect {overflow : hidden ;height : 0px;}
+ #contact{height : auto;overflow : hidden ;width : auto ;padding : 20px;}
+
+  #contactinfo li {display : inline-block ;list-style : none;padding : 15px;padding-bottom:10px;}
+  #ulContactinfo li {display : block ;}
+  #ulIcones li {display : inline-block ;}
+ #ulIcones a {-webkit-transition-property: width,height;
+				-webkit-transition-duration: 1s;
+				-webkit-transition-timing-function: ease-out;
+				
+				/* Bientôt supporté par Firefox */
+        -moz-transition-property: width,height;
+				-moz-transition-duration: 1s;
+				-moz-transition-timing-function: ease-out;
+				
+				/* … et lorsque ce sera standardisé */
+				transition-property: width,height;
+				transition-duration: 1s;
+				transition-timing-function: ease-out;
+ 
+ }
+  #ulIcones img:hover,img:focus {width: 100px;height:100px;
+z-index: 100;}
+  
+			
+		    
+
+  
+  
+/* FOOTER (CONTACT) */
+
+/*#contact{clear:both;background-color:#FFE;color:#111;margin-left:20px;margin-right:20px;padding-bottom:15px;padding-top:15px;
+margin : 0 auto;height:85px;} */
+
+/* CODE RESPONSIVE */
+
+/*@media screen and(max-width:1024px){
+	nav{width : 100%;}
+	main{width : 100%;}
+}*/
+
+@media screen and (max-width: 1024px) {
+  nav {
+	width : auto;
+    display:block;
+    clear:both;
+	position:static;
+  }
+  nav ul {width:auto;}
+  #main{width:100%;}
+  body {width:100%;} 
+  
+  
+  #profilSelect {overflow : auto ;}
+  #profil {overflow : auto ;}
+  
+  
+  #intro {height : auto ;}
+  #introSelect {height : auto ;}
+  #profil {height : auto ;}
+  #profilSelect {height : auto ;}
+  #competencesSelect {height : auto ;}
+  #moncvSelect{height : auto ;}
+  #contactSelect {height : auto ;} 
+}
+
+@media screen and (max-width: 800px) {
+  nav li {display : block ; text-align : center ;}
+  .navLeft {float : none ;}
+  .navRight {float : none ;}
+  
+  #profilSelect {display : block ; text-align : center ;padding :0; }
+  #profilSelect img {display : block ; margin : 0 auto ; margin-top : 20px;}
+  #profilSelect ul {float : none ;}
+  #profil {padding : 10px;}
+  
+  #competences {display : block;text-align : center;padding : 0px;}
+  #competences ul {padding : 5px;}
+  #competences ul li {padding : 0px;}
+  
+  #moncv {display : block ; text-align : center;padding : 0; }
+  
+  #contact {display : block;padding : 0; }
+  #contact ul {padding : 0px;}
+  
+  
+}

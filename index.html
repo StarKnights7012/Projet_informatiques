@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> samuelriso.com </title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Samuel Riso">
+		<meta name="description" content="One Page,Curriculum Vitae,Riso Samuel">
+		<meta name="keywords" content="Riso Samuel,cv">
+		
+		<meta name="robots" content="index,follow">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		
+		<!--[if lte IE 8]>
+		<script src="html5.js"></script>
+		<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('section');
+		document.createElement('footer');
+		
+	
+		</script>
+		<![endif]-->
+		
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="jquery-2.2.2.min.js"> </script>
+		
+	</head>
+	
+	<body ONLOAD="Fonct()" ONRESIZE="Fct_resize()">
+		<div id="main">
+			
+			<div id="corps"> 
+			
+				<nav>
+				
+					<ul class="navLeft">
+						<li > <a id="introLien" href="#" ONCLICK="fct_animate('#intro')"> <strong> Riso Samuel </strong> </a> </li>
+					</ul>
+					
+					<ul class="navRight">
+						<li> <a id="profilLien" href="#" ONCLICK="fct_animate('#profil')"> <strong> Profil </strong> </a> </li>
+						<li> <a id="competencesLien" href="#" ONCLICK="fct_animate('#competences')"> <strong> Compétences </strong> </a> </li>
+						<li> <a id="moncvLien" href="#" ONCLICK="fct_animate('#moncv')"> <strong> Mon CV </strong> </a> </li>
+						<li> <a id="contactLien" href="#" ONCLICK="fct_animate('#contact')"> <strong> Contact </strong> </a> </li>		
+					</ul>
+					
+					<hr>
+				</nav>
+				
+				<div id="introSelect">
+				
+					<div id="intro">
+					
+						<h1 id="name"> Samuel Riso </h1>
+						<h1 id="work"> Développeur </h1>
+						<img src="Images/contact.png" alt="image non disponible" width="125px" height="150px">
+					
+					</div>
+				
+				</div>
+				
+				<div id="profilSelect">
+					<div id="profil">
+							
+							<h2> Profil </h2>
+							
+							<img src="Images/contact.png" alt="image non disponible" width="150px" height="200px">
+							<ul>
+								<li> <h4 id="name2"> Samuel Riso </h4> </li>
+								<li> <h4 id="work2"> Développeur </h4> </li>
+								<li> Nom : Riso Samuel </li>
+								<li> Date de naissance : 3 janvier 1996 </li>
+								<li> Adresse : Rue Lloyd George 8, 7012 Jemappes </li>
+								<li> Téléphone : 0474 62 64 51 </li>
+								<li> Email : s.riso.2014@gmail.com </li>
+							</ul>
+							
+							<p>	Bonjour et bienvenue ! Je suis Samuel Riso, étudiant en informatiques. Je suis un passionné d'informatiques et de technologies depuis très jeune. J'ai eu goût à la programmation depuis déjà 4 ans. J'ai déjà de l'expérience dans le domaine grâce à des projets fait à l'école notamment.  
+							
+							</p>
+					</div>
+				</div>
+				
+				<div id="competencesSelect">
+					<div id="competences"> 
+					
+						<h2> Compétences </h2>
+						
+						<ul>
+						
+							<li><h5>HTML/CSS</h5>
+								<div class="progress">
+									<div id="comp1"></div>
+							</div>
+							</li>
+							<li><h5>Javascript/jQuery</h5>
+								<div class="progress">
+									<div id="comp2"></div>
+								</div>
+							</li>
+							<li><h5>C</h5>
+								<div class="progress">
+									<div id="comp3"></div>
+								</div>
+							</li>
+							<li><h5>C#</h5>
+								<div class="progress">
+									<div id="comp4"></div>
+								</div>
+							</li>
+							<li><h5>Java</h5>
+								<div class="progress">
+									<div id="comp5"></div>
+								</div>
+							</li>
+							
+							<li><h5>Python</h5>
+								<div class="progress">
+									<div id="comp6"></div>
+								</div>
+							</li>
+							
+							<li><h5>Pascal</h5>
+								<div class="progress">
+									<div id="comp7"></div>
+								</div>
+							</li>
+							
+							<li><h5>MySQL</h5>
+								<div class="progress">
+									<div id="comp8"></div>
+								</div>
+							</li>
+							
+							<li><h5>Linux</h5>
+								<div class="progress">
+									<div id="comp9"></div>
+								</div>
+							</li>
+							
+							<li><h5>Windows Server</h5>
+								<div class="progress">
+									<div id="comp10"></div>
+								</div>
+							</li>
+							
+							<li><h5>Packet Tracers</h5>
+								<div class="progress">
+									<div id="comp11"></div>
+								</div>
+							</li>
+						
+						</ul>
+					
+						<h2> Projets </h2>
+						
+						<ul id="imgProjets">
+						
+							<li> <h3> Ratchet-Pedia (Site WEB) </h3>
+							<img src="Images/ratchetpedia.png" alt="image non disponible" width="300px" height="200px">  </li>
+						
+							<li> <h3> Vidéothèque (Application) </h3>
+							<img src="Images/videotheque.png" alt="image non disponible" width="300px" height="200px"></li>
+							
+							<li> <h3> Lot of Money (Jeu Monopoly) </h3>					
+							<img src="Images/lotofmoney.png" alt="image non disponible" width="300px" height="200px"></li>
+						
+						</ul>
+	
+					</div>
+				</div>
+				
+				<div id="moncvSelect">
+				
+					<div id="moncv">
+						<h2> Mon CV </h2>
+						<a id="cvLien" href="Images/moncv.png" download=Images/moncv.png> <img src="Images/moncv.png" alt="image non disponible" width="350px" height="550px"> </a>
+					</div>
+				</div>
+				
+				<div id="contactSelect">
+					<div id="contact">
+					
+						<h2> Contact INFO </h2>
+						
+						<ul id="contactinfo">
+						
+							<li>
+								<ul id="ulContactinfo">
+									<li> <img src="Images/iconeNom.jpg" alt="image non disponible" width="25px" height="25px"> Riso Samuel </li>
+									<li> <img src="Images/iconeTel.png" alt="image non disponible" width="25px" height="25px"> +32 (0) 474/62.64.51 </li>
+									<li> <img src="Images/iconeMaison.png" alt="image non disponible" width="25px" height="25px"> Adresse : Rue Lloyd George 8, 7012 Jemappes </li>
+									<li> <img src="Images/iconeMail.png" alt="image non disponible" width="25px" height="25px"> s.riso.2014@gmail.com </li>
+								</ul>
+							
+							</li>
+							
+							<li>
+								<ul id="ulIcones">
+									<li> <a href="mailto:s.riso.2014@gmail.com"  target="_blank"> <img src="Images/iconeMail.png" alt="image non disponible" width="75px" height="75px"> </li> </a>
+									<li> <a href="https://www.facebook.com/risosam" target="blank"> <img src="Images/iconeFacebook.png" alt="image non disponible" width="75px" height="75px"> </li> </a>
+									<li> <a href="https://www.google.be/maps/place/Rue+Lloyd+George+8,+7012+Mons/@50.44788,3.8823883,17z/data=!4m5!3m4!1s0x47c25a7587cd2635:0xb15745a6fe430671!8m2!3d50.4483982!4d3.8830459?hl=fr" target="blank"> <img src="Images/iconeMap.jpg" alt="image non disponible" width="75px" height="75px"> </li> </a>	
+								</ul>
+							</li>
+						
+						</ul>
+					
+					</div>
+				</div>
+				
+				<script>
+				
+					var oldSelect ;
+				
+					function Fonct()
+					{
+						oldSelect = '#intro' ;
+						document.getElementById('introLien').style.backgroundColor = "#FFF" ;
+					}
+					
+					function Fct_resize()
+					{
+						if((getComputedStyle(document.getElementById('profil')).overflow)=='hidden')
+						{	
+							document.getElementById('introSelect').style.height = "0px" ;
+							document.getElementById('profilSelect').style.height = "0px" ;
+							document.getElementById('competencesSelect').style.height = "0px" ;
+							document.getElementById('moncvSelect').style.height = "0px" ;
+							document.getElementById('contactSelect').style.height = "0px" ;
+							$(oldSelect+'Select').height("auto") ;
+						}
+						else
+						{
+							document.getElementById('introSelect').style.height = "auto" ;
+							document.getElementById('profilSelect').style.height = "auto" ;
+							document.getElementById('competencesSelect').style.height = "auto" ;
+							document.getElementById('moncvSelect').style.height = "auto" ;
+							document.getElementById('contactSelect').style.height = "auto" ;
+						}
+					}
+					
+					function fct_animate(x)
+					{
+						
+						if((getComputedStyle(document.getElementById('profil')).overflow)=='hidden')
+						{
+							if (x != oldSelect)
+							{
+									document.getElementById('introLien').style.backgroundColor = "#DDD" ;
+									document.getElementById('profilLien').style.backgroundColor = "#DDD" ;
+									document.getElementById('competencesLien').style.backgroundColor = "#DDD" ;
+									document.getElementById('moncvLien').style.backgroundColor = "#DDD" ;
+									document.getElementById('contactLien').style.backgroundColor = "#DDD" ; 
+									
+									$(oldSelect+'Lien').css('background-color', '#DDD');
+									$(x+'Lien').css('background-color', '#FFF');
+									
+									$(oldSelect+'Select').stop().animate({height:  '0px'},{duration:'1000'});
+				
+									// newHeight = $(x).height() ;
+									
+									newHeight = 'auto' ;
+									
+									//$(x+'Select').stop().delay(750).animate({height: newHeight},{duration:'1000'});
+										
+									oldSelect = x ;
+									
+									current = $(x+'Select'),
+									curHeight = current.height(),
+									autoHeight = current.css('height', 'auto').height();
+									current.height(curHeight).stop().delay(750).animate({height: autoHeight}, 1000);
+									
+									$(document).ready(function(){
+									$("#comp1").animate({width:"0%"},0);
+									$("#comp2").animate({width:"0%"},0);
+									$("#comp3").animate({width:"0%"},0);
+									$("#comp4").animate({width:"0%"},0);
+									$("#comp5").animate({width:"0%"},0);
+									$("#comp6").animate({width:"0%"},0);
+									$("#comp7").animate({width:"0%"},0);
+									$("#comp8").animate({width:"0%"},0);
+									$("#comp9").animate({width:"0%"},0);
+									$("#comp10").animate({width:"0%"},0);
+									$("#comp11").animate({width:"0%"},0);
+									});
+									
+									pourc1=85;
+									pourc2=80;
+									pourc3=85;
+									pourc4=80;
+									pourc5=70;
+									pourc6=60;
+									pourc7=70;
+									pourc8=60;
+									pourc9=50;
+									pourc10=55;
+									pourc11=70;
+									
+													
+									$("#comp1").stop().delay(1500).animate({width:pourc1+"%"},800);
+									$("#comp2").stop().delay(1500).animate({width:pourc2+"%"},800);
+									$("#comp3").stop().delay(1500).animate({width:pourc3+"%"},800);
+									$("#comp4").stop().delay(1500).animate({width:pourc4+"%"},800);
+									$("#comp5").stop().delay(1500).animate({width:pourc5+"%"},800);
+									$("#comp6").stop().delay(1500).animate({width:pourc6+"%"},800);
+									$("#comp7").stop().delay(1500).animate({width:pourc7+"%"},800);
+									$("#comp8").stop().delay(1500).animate({width:pourc8+"%"},800);
+									$("#comp9").stop().delay(1500).animate({width:pourc9+"%"},800);
+									$("#comp10").stop().delay(1500).animate({width:pourc10+"%"},800);
+									$("#comp11").stop().delay(1500).animate({width:pourc11+"%"},800);
+										
+							}
+					
+						}
+						else
+						{
+							$('body,html').animate({scrollTop: $(x).offset().top}, $(x).offset().top/1.2);
+							
+							document.getElementById('introSelect').style.height = "auto" ;
+							document.getElementById('profilSelect').style.height = "auto" ;
+							document.getElementById('competencesSelect').style.height = "auto" ;
+							document.getElementById('moncvSelect').style.height = "auto" ;
+							document.getElementById('contactSelect').style.height = "auto" ;
+							
+							document.getElementById('introLien').style.backgroundColor = "#DDD" ;
+							document.getElementById('profilLien').style.backgroundColor = "#DDD" ;
+							document.getElementById('competencesLien').style.backgroundColor = "#DDD" ;
+							document.getElementById('moncvLien').style.backgroundColor = "#DDD" ;
+							document.getElementById('contactLien').style.backgroundColor = "#DDD" ;
+						}
+	
+					}
+					
+					
+				</script>
+		
+			</div>
+				
+		</div>
+		
+		
+	
+	</body>
+
+</html>

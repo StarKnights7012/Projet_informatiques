@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="author" content="Samuel RISO">
+		<script type="text/javascript" src="jquery.js"></script>
+		<title> Examen effet image </title>
+	
+		<style type="text/css">
+			
+			/* body html */
+			
+			html,body {margin : 0 auto ; background-color : #000 ;}
+			
+			/* div contenu */
+			
+			#contenu {position : relative ;margin : 0 auto ;height : auto ;background-color : #111;padding : auto ; text-align : center ;display: inline-block;width: 100%;}
+			
+			/* div p */
+			
+			/* div contendImage */
+			
+			#contendImage {overflow : hidden;position : relative ;margin : 0;height : auto ;background-color : #111;padding : 0 ; text-align : center ;display: inline-block;width: auto;}
+			
+			/* div p */
+			
+			p {color : #FFF;}
+			
+			/* div blocImage */
+			
+			.blocImage {position: relative;
+			background-image: url("ranging.jpg") ;
+	
+			background-size: cover	;
+
+			background-color : #FFF;	
+				
+			display: inline-block ;padding :0;margin:0;}
+			
+			/* div bloc */
+					
+			
+		
+		</style>
+	
+	</head>
+	
+	<body ONLOAD="fct()">
+	
+		<div id="contenu">
+			
+			<div id="contendImage">
+				
+				<img id="image" alt="no" src="ranging.jpg" height="500px" width="1000px">
+				
+			</div>
+			
+		
+		</div>
+		
+		<script>
+			
+			var randomNbre=0 ;
+			var hauteurImage=$('#image').height();
+			var largeurImage=$('#image').width();
+			
+			function fct()
+			{
+				Random();
+				
+				setTimeout(function(){changementEffet(randomNbre);},1000);
+				setTimeout(function(){Bouger(randomNbre);},1000);
+		
+		
+			}
+			
+			function Random()
+				{
+					randomNbre=(Math.floor(Math.random() * 25) + 1) ;
+				
+					$('#contenu').append("<p>" + randomNbre + "</p>") ;
+				}
+			
+			function changementEffet(randomX)
+			{
+				$('#image').remove() ;
+				
+				console.log(largeurImage) ;
+				value=randomX ;
+				
+				newLarg=largeurImage/value;
+				
+				var largPosition = 0;
+				
+				for(var i=0;i<value;i++)
+				{
+					
+					
+					
+					$('#contendImage').append("<div class='blocImage' id='bloc" + i +"'> </div>");
+					$("#bloc"+i).css('background-position','0' -largPosition)
+					largPosition+=newLarg;
+				}
+				
+				$('.blocImage').css('height', hauteurImage) ;
+				
+				$('.blocImage').css('width', newLarg) ;
+				
+				
+			}
+			
+			function Bouger(randomX)
+			{
+				value=randomX ;
+				var tempo= 0;
+				
+				for(var i=0;i<value;i++)
+				{
+					$('#bloc'+i).stop().delay(1000).animate({bottom : '-=510' },1000+tempo) ;
+					tempo=tempo+100;
+				}
+				//$('#bloc'+0).stop().delay(1000).animate({bottom : '-=500' },2000) ;
+				//$('#bloc'+2).stop().delay(1000).animate({bottom : '-=500' },4000) ;
+				
+			}
+		
+		</script>
+	
+	</body>
+	
+</html>

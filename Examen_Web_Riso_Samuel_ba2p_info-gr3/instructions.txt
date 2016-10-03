@@ -1,0 +1,22 @@
+Examen de TR2INT
+
+Internet, GSM et clés USB sont interdits.
+Vous avez 2 heures.
+
+Le sujet est un effet de disparition sur une image
+
+En HTML, un bloc centré contient une image (choisissez une des 3 sources).
+
+Au chargement de la page,
+Un nombre aléatoire entre 5 et 25 est pioché et affiché sous l'image.
+Le contenu du bloc contenant l'image est remplacé (l'élément <img...> est écrasé par un nouveau contenu).
+Ce nouveau contenu est constitué de x (le nombre aléatoire affiché sous l'image) blocs côte à côte avec pour chaque bloc, l'image choisie en background décallée avec la propriété background-position. 
+La largeur de chaque bloc est donc la largeur de l'image / x
+Si c'est bien réalisé, l'illusion est parfaite : on a l'impression que l'image est toujours là !
+
+Après 1000ms, l'animation se déclanche (appel temporisé d'une fonction). Utilisez la syntaxe suivante :
+setTimeout(function() {hop();},1000);
+
+A l'appel de la fonction d'animation,
+le premier bloc commence un effet de translation verticale vers le bas (effet jQuery) jusqu'à disparaitre.
+Si le nombre de blocs qui ont subit l'animation est inférieur à x, la fonction se réappelle elle-même (avec une légère temporisation) pour passer au bloc suivant

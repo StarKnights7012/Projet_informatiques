@@ -1,0 +1,4 @@
+af3b5deaff
+StarWars#\images\starwars.jpg#George Lucas#1999#Empty.
+Ratchet & Clank#\images\r&c.jpg#Jericca Cleland#2015#« Ratchet and Clank raconte l’histoire de deux heros improbables qui luttent pour empecher un infame extraterrestre appele Chairman Drek de detruire chaque planete de la Galaxie Solana. Lorsqu’ils tombent sur une arme dangereuse capable de detruire des planetes entieres, ils doivent collaborer avec une equipe de heros haut en couleur appeles les Galactic Rangers afin de sauver la galaxie. En cours de route, ils decouvriront l’heroisme, l’amitie et l’importance de decouvrir sa propre identite. » Le film est réalise par James Arnold Taylor Jericca Cleland et Kevin Munroe sur base d’un scenario de T.J. Fixman.
+New Film#\images\film.jpg#Director#2015#Empty.
